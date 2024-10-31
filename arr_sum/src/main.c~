@@ -1,0 +1,25 @@
+/* 
+牛牛学习了指针相关的知识，想实现一个 int cal(int *array,int n) 
+的函数求出长度为 n 的数组的和。
+ */
+
+#include <stdio.h>
+
+int cal(int *array,int n) 
+{
+	int sum = 0;
+	for(int i = 0;i<n;i++)
+	{
+		sum+=*(array+i);
+	}
+	return sum;
+}
+int main()
+{
+	int arr[6]={1,2,3,4,5,6};
+	int sz =sizeof(arr)/sizeof(arr[0]);
+	int ret = cal(arr,sz);
+	printf("%d",ret);
+	return (0);
+}
+

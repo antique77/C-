@@ -1,0 +1,17 @@
+/*
+模拟strcat函数实现
+ */
+
+#include <stdio.h>
+
+int main()
+{
+	char str[20];
+	char str1[20] ="hello ";
+	scanf("%s",str);
+	char* ret = my_strcat(str1,str);
+	printf("%s\n",str1);
+	printf("%s\n",ret);
+	return (0);
+}
+

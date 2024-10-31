@@ -1,0 +1,14 @@
+/* 
+重新编写程序12.7的dll_list函数，使头和尾指针分别以一个单独的指针传递给函数，
+而不是作为一个节点的一部分，从函数的逻辑而言，这个改动有何效果？
+ */
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+int main(void)
+{
+	
+	return 0;
+}

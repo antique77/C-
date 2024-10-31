@@ -1,0 +1,11 @@
+/*
+练习函数调用
+ */
+
+#include <stdio.h>
+int main()
+{
+	printf("Hello world\n");
+	return (0);
+}
+

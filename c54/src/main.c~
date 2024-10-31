@@ -1,0 +1,15 @@
+/* 
+题目：取一个整数 a 从右端开始的 4～7 位。
+ */
+
+#include <stdio.h>
+int main()
+{
+	int a = 0;
+	scanf("%o",&a);
+	int b = a >> 4;
+	b=b&16;
+	printf("%o",b);
+	return (0);
+}
+

@@ -1,0 +1,28 @@
+/*
+ 利用递归函数调用方式，将所输入的5个字符，以相反顺序打印出来。
+ */
+
+#include <stdio.h>
+#include <string.h>
+
+void print(char *arr , int len ,int len1)
+{
+	if(len<=0)
+	{
+		printf("%c",*(arr+len1-len));
+		return 1;
+	}else 
+		printf("%c",*(arr+len1-len));
+	
+	return print(arr,len-1,len1);
+}
+int main()
+{
+	char arr[20];
+
+	scanf("%s",arr);
+	int len =strlen(arr);
+	print(arr,len,len);
+	return (0);
+}
+
